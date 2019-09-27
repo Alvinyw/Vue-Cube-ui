@@ -1,7 +1,3 @@
-export function createBase64() {
-    //return Cookies.remove(firstLoginPsw)
-}
-
 export function spiltBase64(url) {
     return url.substring(url.indexOf(',') + 1)
 }

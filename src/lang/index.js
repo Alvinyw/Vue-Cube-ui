@@ -10,9 +10,9 @@ Vue.use(VueI18n)
 const i18n = new VueI18n({
   locale: getLanguage() ? getLanguage() : 'zh', // set locale
   messages: {
-    zh: require('./zh.js'), // 中文语言包
+    zh: require('./zh-CN.js'), // 简体中文语言包
     en: require('./en.js'), // 英文语言包
-    ct: require('./ct.js') // Cantonese：粤语语言包 
+    ct: require('./zh-TW.js') // 繁体中文语言包 
   }
 })
 

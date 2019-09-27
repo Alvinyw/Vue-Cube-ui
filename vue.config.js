@@ -6,7 +6,7 @@ function resolve(dir) {
 
 module.exports = {
   publicPath: process.env.VUE_APP_PUBLICPATH,
-  outputDir: 'openDemo',
+  outputDir: 'testDemo',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
@@ -16,9 +16,8 @@ module.exports = {
       errors: true
     },
     proxy: {
-      '/api': { // 此处并非和url一致
-        //target: 'http://39.105.16.68:8082/open/',
-        target: 'http://39.105.16.68:8072/openapi/',
+      '/api': {
+        target: 'http://192.168.188.46:8081/',
         changeOrigin: true, // 允许跨域
         ws: true,
         pathRewrite: {
