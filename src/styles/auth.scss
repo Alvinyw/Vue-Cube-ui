@@ -1,0 +1,50 @@
+.auth {
+  .form {
+    width: 100%;
+    background-color: #f9f9fb;
+    margin: 20px auto 0;
+  }
+
+  &-group {
+    background-color: #fff;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    .cube-form-item {
+      padding: 0;
+
+      &.cube-form-item_required {
+        .cube-form-label {
+          &::before {
+            display: none;
+          }
+        }
+
+        .cube-validator_invalid {
+          .cube-validator-msg {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: 36px;
+    line-height: 90px;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  &-top {
+    margin-top: 20px;
+  }
+
+  &-btn {
+    width: 690px;
+    margin: 80px auto 0;
+    background-color: #FF665F;
+  }
+}

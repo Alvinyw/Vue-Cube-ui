@@ -1,0 +1,149 @@
+.cube-btn,
+.cube-dialog-btn_highlight {
+    position: relative;
+    height: 94px;
+    font-size: 36px;
+    border-radius: 8px;
+}
+
+.cube-dialog-btn_highlight {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 94px;
+}
+
+.cube-btn-inline {
+    height: 44px;
+    font-size: 24px;
+    border-radius: 2px;
+}
+
+.cube-btn_disabled {
+    background-color: #FF665F;
+    opacity: 0.4;
+
+    &:focus {
+        background-color: #FF665F;
+    }
+
+    &:active {
+        background-color: #FF665F;
+    }
+}
+
+.cube-dialog-main {
+    width: 690px;
+    border-radius: 16px;
+    padding: 0 35px 78px;
+    box-sizing: border-box;
+}
+
+.cube-dialog-mytitle-text {
+    color: #333;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 118px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 58px;
+}
+
+.cube-dialog-mytitle-img {
+    display: block;
+    width: 507px;
+    height: auto;
+    min-height: 150px;
+    margin: 0 auto 36px;
+}
+
+.cube-dialog-mycontent {
+    padding: 0 25px 53px;
+
+    p {
+        color: #999999;
+        font-size: 28px;
+        line-height: 52px;
+        position: relative;
+        padding-left: 30px;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 17px;
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            border: 2px solid #999999;
+        }
+    }
+
+    &.isExplain {
+        p {
+            padding-left: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.cube-dialog-protocol {
+    max-height: 729px;
+    padding: 0 30px;
+    color: red;
+    box-sizing: border-box;
+    margin-bottom: 45px;
+    overflow-y: scroll;
+
+    p {
+        color: #999999;
+        line-height: 1.8;
+    }
+}
+
+.cube-form-item {
+    display: flex;
+    height: 100px;
+    font-size: 28px;
+    color: #333333;
+    border-bottom: 1px solid #E6E6E6;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+.cube-form_standard .cube-form-label {
+    width: 170px;
+    padding-right: 0;
+}
+
+.ocr .cube-form_standard .cube-form-label {
+    color: #999999;
+}
+
+.cube-form-field {
+    padding-left: 23px;
+    line-height: 40px;
+}
+
+.cube-input {
+    color: #333;
+    border: 0;
+    font-size: 28px;
+}
+
+// .cube-dialog-btn {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 570px;
+//     height: 94px;
+//     margin: 0 auto;
+//     color: #ffffff;
+//     font-size: 36px;
+//     border-radius: 8px;
+//     background: #FF665F;
+// }

@@ -1,0 +1,57 @@
+$primary: #fc1b10;
+$basic-font-color: #333333;
+$basic-font-family: PingFangSC-Regular;
+/**
+ * 步骤条样式
+ */
+$step-bar-color: #C9C9C9;
+$step-line-color: #E7E7E7;
+$step-active-color: #F13D35;
+
+// 提示
+$tip-color: #FC1B10;
+
+// 记录状态
+$record-repay-color: #7ED321;   // 还款中
+$record-overdue-color: #FC372D; // 逾期
+$record-finish-color: #C1C1C1;  // 已还清
+
+/**
+ * 清除浮动
+ */
+@mixin clearfix {
+  &::after {
+    display: block;
+    content: "";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+  zoom:1;
+}
+
+/**
+ * 解决移动端1px
+ */
+@mixin setborder($type, $color) {
+  position: relative;
+  &::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    @if $type == bottom {
+      border-bottom: 1px solid $color;
+      bottom: 0;
+    } @else if $type == top {
+      border-top: 1px solid $color;
+      top: 0;
+    }
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scaleY(0.33333);
+    transform-origin: 0 0;
+    transform: scaleY(0.33);
+  }
+}
