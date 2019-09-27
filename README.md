@@ -24,6 +24,9 @@ npm run test
 ```
 npm run lint
 ```
+### 参考文档
+1. [Cube-ui](https://didi.github.io/cube-ui/#/zh-CN/docs/introduction)
+2. [Vue.js](https://cn.vuejs.org/v2/guide/)
 
 ### 功能模块
 1. 拍照、手机相册选图
